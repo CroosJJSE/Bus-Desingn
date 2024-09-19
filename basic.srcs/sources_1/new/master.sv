@@ -38,7 +38,7 @@ module master (
     always @(posedge clk or posedge async_reset) begin
         if (async_reset) begin // Reset logic
             write_counter <= 2'b00;  // Reset the counter
-            current_instruction <= 3'b000;
+            current_instruction <= 2'b00;
             M1_request <= 1'b0;
             data_valid_internal <= 1'b0;
             state <= IDLE;
@@ -64,7 +64,7 @@ module master (
 
                 READ: begin
                     M1_request <= 1'b1;  // Request bus
-                    if (ext_data_valid) begin
+                    if (M1_grant && ext_data_valid) begin
                         register_data <= data_in;  // Store the data read from the bus
                         current_instruction <= next_instruction;  // Move to the next instruction
                     end
@@ -99,9 +99,10 @@ module master (
 
     // Initialize instruction memory (can be customized later)
     initial begin
-        instruction_memory[0] = 8'b01_000_0_01;  // Example: WRITE to Slave 1
-        instruction_memory[1] = 8'b01_000_0_10;  // Example: IDLE
-        instruction_memory[2] = 8'b10000101;  // Example: WRITE to Slave 5
+        next_instruction = 2'b01;
+        instruction_memory[0] = 8'b01_000_0_01;  // Example: READ to Slave 1
+        instruction_memory[1] = 8'b01_010_0_10;  // Example: READ
+        instruction_memory[2] = 8'b01_001_1_01;  // Example: WRITE to Slave 5
         instruction_memory[3] = 8'b10000001;  // Example: WRITE to Slave 1
         instruction_memory[4] = 8'b10000110;  // Example: WRITE to Slave 6
     end
