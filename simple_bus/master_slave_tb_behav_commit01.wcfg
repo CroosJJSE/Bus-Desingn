@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="master_slave_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="master_slave_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,004.001 ns"></ZoomEndTime>
+      <Cursor1Time time="339.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="358"></NameColumnWidth>
+      <ValueColumnWidth column_width="174"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/master_slave_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/master_din" type="array">
+      <obj_property name="ElementShortName">master_din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">master_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/slack" type="logic">
+      <obj_property name="ElementShortName">slack</obj_property>
+      <obj_property name="ObjectShortName">slack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/grant" type="logic">
+      <obj_property name="ElementShortName">grant</obj_property>
+      <obj_property name="ObjectShortName">grant</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/master_dout" type="array">
+      <obj_property name="ElementShortName">master_dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">master_dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/master_addr" type="array">
+      <obj_property name="ElementShortName">master_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">master_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/request" type="logic">
+      <obj_property name="ElementShortName">request</obj_property>
+      <obj_property name="ObjectShortName">request</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/wr" type="logic">
+      <obj_property name="ElementShortName">wr</obj_property>
+      <obj_property name="ObjectShortName">wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/slave_select" type="logic">
+      <obj_property name="ElementShortName">slave_select</obj_property>
+      <obj_property name="ObjectShortName">slave_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/ADDR_WIDTH" type="array">
+      <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/master_inst/processor/pc" type="array">
+      <obj_property name="ElementShortName">pc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/master_inst/processor/regfile" type="array">
+      <obj_property name="ElementShortName">regfile[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile[0:7][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/master_slave_tb/slave_inst/mem_inst/mem_array" type="array">
+      <obj_property name="ElementShortName">mem_array[0:3][7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_array[0:3][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>
