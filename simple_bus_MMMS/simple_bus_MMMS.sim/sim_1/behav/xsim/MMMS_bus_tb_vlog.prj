@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Simple_bus_SMMS/Simple_bus_SMMS.srcs/sources_1/new/decoder.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/imports/new/master.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/new/master2.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/imports/new/master_interface.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/imports/new/memory.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/new/mux_2to1_addr_data.v" \
+"../../../../../Simple_bus_SMMS/Simple_bus_SMMS.srcs/sources_1/new/mux_3to1_8bit.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/new/mux_demux.v" \
+"../../../../../Simple_bus_SMMS/Simple_bus_SMMS.srcs/sources_1/new/simple_arbiter.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/imports/new/simple_processor.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/new/simple_processor2.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/imports/new/slave.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/imports/new/slave_interface.v" \
+"../../../../simple_bus_MMMS.srcs/sources_1/new/MMMS_bus_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
