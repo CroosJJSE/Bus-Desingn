@@ -94,7 +94,11 @@ module ss_slave_interface (
             end
 
             SPLIT: begin
-                split = 0;
+                if(slave_select) begin
+                    split = 1;
+                end else begin
+                    split = 0;
+                end
 
                 if (!wait_signal) begin
                     // After wait is over, move to REQ_SPLIT_STATE

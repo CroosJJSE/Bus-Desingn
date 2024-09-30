@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="616.179 ns"></ZoomEndTime>
-      <Cursor1Time time="10,655.000 ns"></Cursor1Time>
+      <ZoomEndTime time="2,334.001 ns"></ZoomEndTime>
+      <Cursor1Time time="685.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="310"></NameColumnWidth>
-      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+      <NameColumnWidth column_width="297"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="51" />
    <wvobject fp_name="/tb_simple_bus_MMMS_SSS/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -36,6 +36,30 @@
       <obj_property name="ElementShortName">grant2</obj_property>
       <obj_property name="ObjectShortName">grant2</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/split" type="logic">
+      <obj_property name="ElementShortName">split</obj_property>
+      <obj_property name="ObjectShortName">split</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_sel" type="logic">
+      <obj_property name="ElementShortName">slave1_sel</obj_property>
+      <obj_property name="ObjectShortName">slave1_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave2_sel" type="logic">
+      <obj_property name="ElementShortName">slave2_sel</obj_property>
+      <obj_property name="ObjectShortName">slave2_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave3_sel" type="logic">
+      <obj_property name="ElementShortName">slave3_sel</obj_property>
+      <obj_property name="ObjectShortName">slave3_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/slack" type="logic">
+      <obj_property name="ElementShortName">slack</obj_property>
+      <obj_property name="ObjectShortName">slack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/slack2" type="logic">
+      <obj_property name="ElementShortName">slack2</obj_property>
+      <obj_property name="ObjectShortName">slack2</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_simple_bus_MMMS_SSS/master_dout" type="array">
       <obj_property name="ElementShortName">master_dout[7:0]</obj_property>
       <obj_property name="ObjectShortName">master_dout[7:0]</obj_property>
@@ -47,5 +71,157 @@
    <wvobject fp_name="/tb_simple_bus_MMMS_SSS/master_din" type="array">
       <obj_property name="ElementShortName">master_din[7:0]</obj_property>
       <obj_property name="ObjectShortName">master_din[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/addr" type="array">
+      <obj_property name="ElementShortName">addr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/slave_select" type="logic">
+      <obj_property name="ElementShortName">slave_select</obj_property>
+      <obj_property name="ObjectShortName">slave_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/active_master" type="array">
+      <obj_property name="ElementShortName">active_master[1:0]</obj_property>
+      <obj_property name="ObjectShortName">active_master[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/ack" type="logic">
+      <obj_property name="ElementShortName">ack</obj_property>
+      <obj_property name="ObjectShortName">ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/req_split_master" type="array">
+      <obj_property name="ElementShortName">req_split_master[1:0]</obj_property>
+      <obj_property name="ObjectShortName">req_split_master[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/mem_write_data" type="array">
+      <obj_property name="ElementShortName">mem_write_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_write_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/mem_read_data" type="array">
+      <obj_property name="ElementShortName">mem_read_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_read_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/mem_addr" type="array">
+      <obj_property name="ElementShortName">mem_addr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/mem_write_enable" type="logic">
+      <obj_property name="ElementShortName">mem_write_enable</obj_property>
+      <obj_property name="ObjectShortName">mem_write_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/mem_read_enable" type="logic">
+      <obj_property name="ElementShortName">mem_read_enable</obj_property>
+      <obj_property name="ObjectShortName">mem_read_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/slave1_inst/wait_signal" type="logic">
+      <obj_property name="ElementShortName">wait_signal</obj_property>
+      <obj_property name="ObjectShortName">wait_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/slack1" type="logic">
+      <obj_property name="ElementShortName">slack1</obj_property>
+      <obj_property name="ObjectShortName">slack1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/split" type="logic">
+      <obj_property name="ElementShortName">split</obj_property>
+      <obj_property name="ObjectShortName">split</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/master1_inst/processor/pc" type="array">
+      <obj_property name="ElementShortName">pc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/master2_inst/processor/pc" type="array">
+      <obj_property name="ElementShortName">pc[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/req_split_slave" type="array">
+      <obj_property name="ElementShortName">req_split_slave[1:0]</obj_property>
+      <obj_property name="ObjectShortName">req_split_slave[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/req_master1" type="logic">
+      <obj_property name="ElementShortName">req_master1</obj_property>
+      <obj_property name="ObjectShortName">req_master1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/req_master2" type="logic">
+      <obj_property name="ElementShortName">req_master2</obj_property>
+      <obj_property name="ObjectShortName">req_master2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/grant_master1" type="logic">
+      <obj_property name="ElementShortName">grant_master1</obj_property>
+      <obj_property name="ObjectShortName">grant_master1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/grant_master2" type="logic">
+      <obj_property name="ElementShortName">grant_master2</obj_property>
+      <obj_property name="ObjectShortName">grant_master2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/active_master" type="array">
+      <obj_property name="ElementShortName">active_master[1:0]</obj_property>
+      <obj_property name="ObjectShortName">active_master[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/splitted_master" type="array">
+      <obj_property name="ElementShortName">splitted_master[1:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">splitted_master[1:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/next_splitted_master" type="array">
+      <obj_property name="ElementShortName">next_splitted_master[1:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_splitted_master[1:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/req_splitted_master" type="array">
+      <obj_property name="ElementShortName">req_splitted_master[1:0]</obj_property>
+      <obj_property name="ObjectShortName">req_splitted_master[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/next_req_splitted_master" type="array">
+      <obj_property name="ElementShortName">next_req_splitted_master[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_req_splitted_master[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/split_done" type="array">
+      <obj_property name="ElementShortName">split_done[1:0]</obj_property>
+      <obj_property name="ObjectShortName">split_done[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/GRANT_MASTER1" type="array">
+      <obj_property name="ElementShortName">GRANT_MASTER1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">GRANT_MASTER1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_simple_bus_MMMS_SSS/arbiter_inst/GRANT_MASTER2" type="array">
+      <obj_property name="ElementShortName">GRANT_MASTER2[1:0]</obj_property>
+      <obj_property name="ObjectShortName">GRANT_MASTER2[1:0]</obj_property>
    </wvobject>
 </wave_config>

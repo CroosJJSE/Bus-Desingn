@@ -77,24 +77,26 @@ module simple_processor1 #(
 
         // Initialize instruction memory (updated instructions for communication with all three slaves)
         instr_mem[0] = {OP_READ, 4'b0010, 4'b0000};   // Read from memory address 2 to regfile[0] (Slave 1)
-//        instr_mem[1] = {OP_WRITE, 4'b0001, 4'b0001};  // Write regfile[1] to memory address 1 (Slave 1)
+        instr_mem[1] = {OP_WRITE, 4'b0001, 4'b0001};  // Write regfile[1] to memory address 1 (Slave 1)
 
-//        instr_mem[2] = {OP_READ, 4'b0100, 4'b0010};   // Read from memory address 4 to regfile[2] (Slave 2)
-//        instr_mem[3] = {OP_WRITE, 4'b0101, 4'b0011};  // Write regfile[3] to memory address 5 (Slave 2)
+        instr_mem[2] = {OP_READ, 4'b0100, 4'b0010};   // Read from memory address 4 to regfile[2] (Slave 2)
+        instr_mem[3] = {OP_WRITE, 4'b0101, 4'b0011};  // Write regfile[3] to memory address 5 (Slave 2)
 
-//        instr_mem[4] = {OP_READ, 4'b1000, 4'b0100};   // Read from memory address 8 to regfile[4] (Slave 3)
-//        instr_mem[5] = {OP_WRITE, 4'b1001, 4'b0101};  // Write regfile[5] to memory address 9 (Slave 3)
+        instr_mem[4] = {OP_READ, 4'b1000, 4'b0100};   // Read from memory address 8 to regfile[4] (Slave 3)
+        instr_mem[5] = {OP_WRITE, 4'b1001, 4'b0101};  // Write regfile[5] to memory address 9 (Slave 3)
 
-//        instr_mem[6] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
-//        instr_mem[7] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
+        instr_mem[6] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
+        instr_mem[7] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
 
-          instr_mem[1] = {OP_IDLE, 4'b0000, 4'b0000};
-          instr_mem[2] = {OP_IDLE, 4'b0000, 4'b0000};
-          instr_mem[3] = {OP_IDLE, 4'b0000, 4'b0000};
-          instr_mem[4] = {OP_IDLE, 4'b0000, 4'b0000};
-          instr_mem[5] = {OP_IDLE, 4'b0000, 4'b0000};
-          instr_mem[6] = {OP_IDLE, 4'b0000, 4'b0000};
-          instr_mem[7] = {OP_IDLE, 4'b0000, 4'b0000};
+//          instr_mem[0] = {OP_IDLE, 4'b0000, 4'b0000};
+
+//          instr_mem[1] = {OP_IDLE, 4'b0000, 4'b0000};
+//          instr_mem[2] = {OP_IDLE, 4'b0000, 4'b0000};
+//          instr_mem[3] = {OP_IDLE, 4'b0000, 4'b0000};
+//          instr_mem[4] = {OP_IDLE, 4'b0000, 4'b0000};
+//          instr_mem[5] = {OP_IDLE, 4'b0000, 4'b0000};
+//          instr_mem[6] = {OP_IDLE, 4'b0000, 4'b0000};
+//          instr_mem[7] = {OP_IDLE, 4'b0000, 4'b0000};
 
 
         // Initialize state

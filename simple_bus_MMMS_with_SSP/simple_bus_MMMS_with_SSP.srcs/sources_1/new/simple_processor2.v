@@ -76,20 +76,19 @@ module simple_processor2 #(
         regfile[7] = 8'd8;
 
         // Initialize instruction memory (updated instructions for communication with all three slaves)
-        //instr_mem[7] = {OP_READ, 4'b0000, 4'b0001};   // Read from memory address 0 to regfile[0] (Slave 1)
-        //instr_mem[6] = {OP_WRITE, 4'b0001, 4'b0000};  // Write regfile[1] to memory address 1 (Slave 1)
-        instr_mem[7] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
-        instr_mem[6] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
+        instr_mem[7] = {OP_READ, 4'b0000, 4'b0001};   // Read from memory address 0 to regfile[0] (Slave 1)
+        instr_mem[6] = {OP_WRITE, 4'b0001, 4'b0000};  // Write regfile[1] to memory address 1 (Slave 1)
+  
+        instr_mem[5] = {OP_READ, 4'b0100, 4'b0011};   // Read from memory address 4 to regfile[3] (Slave 2)
+        instr_mem[4] = {OP_WRITE, 4'b0101, 4'b0010};  // Write regfile[2] to memory address 5 (Slave 2)
 
-        instr_mem[5] = {OP_READ, 4'b0100, 4'b0011};   // Read from memory address 4 to regfile[2] (Slave 2)
-        instr_mem[4] = {OP_WRITE, 4'b0101, 4'b0010};  // Write regfile[3] to memory address 5 (Slave 2)
+        instr_mem[3] = {OP_READ, 4'b1000, 4'b0101};   // Read from memory address 8 to regfile[5] (Slave 3)
+        instr_mem[2] = {OP_WRITE, 4'b1001, 4'b0100};  // Write regfile[4] to memory address 9 (Slave 3)
 
-        instr_mem[3] = {OP_READ, 4'b1000, 4'b0101};   // Read from memory address 8 to regfile[4] (Slave 3)
-        instr_mem[2] = {OP_WRITE, 4'b1001, 4'b0100};  // Write regfile[5] to memory address 9 (Slave 3)
-
-        instr_mem[1] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
+        instr_mem[1] = {OP_READ, 4'b0011, 4'b0000};   // Read Memory 01
         instr_mem[0] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
 
+//          //instr_mem[0] = {OP_READ, 4'b0010, 4'b0000};
 //          instr_mem[0] = {OP_IDLE, 4'b0000, 4'b0000};
 //          instr_mem[1] = {OP_IDLE, 4'b0000, 4'b0000};
 //          instr_mem[2] = {OP_IDLE, 4'b0000, 4'b0000};

@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module ss_arbiter (
+module ss_arbiter_v1 (
     input clk,                      // Clock signal
     input reset,                    // Reset signal
     input slack1,                   // Acknowledge from slave to Master 1
@@ -42,8 +42,7 @@ parameter IDLE = 2'b00,
 reg [1:0] current_state, next_state;
 
 // Splitted master tracking (current and next values)
-reg [1:0] splitted_master [1:0];
-reg [1:0] next_splitted_master [1:0];
+reg [1:0] splitted_master, next_splitted_master;
 reg [1:0] req_splitted_master, next_req_splitted_master;  // Requested split masters
 reg [1:0] split_done;
 
@@ -51,18 +50,16 @@ reg [1:0] split_done;
 always @(posedge clk or posedge reset) begin
     if (reset) begin
         current_state <= IDLE;                         // Reset to IDLE state
-        splitted_master[0] <= 2'b00;                      // Reset split master tracking
-        splitted_master[1] <= 2'b00;                      // Reset split master tracking
+        splitted_master <= 2'b00;                      // Reset split master tracking
         req_splitted_master <= 2'b00;                  // Reset split request tracking
         active_master <= 2'b00;                        // No active master
     end else begin
         current_state <= next_state;                   // State transition
-        splitted_master[0] <= next_splitted_master[0];        // Update splitted master
-        splitted_master[1] <= next_splitted_master[1];        // Update splitted master
+        splitted_master <= next_splitted_master;        // Update splitted master
         if (split_done == 2'b01) begin
-            req_splitted_master[0] <= 1'b0; 
+            req_splitted_master <= 2'b00; 
         end else if (split_done == 2'b10) begin
-            req_splitted_master[1] <= 1'b0; 
+            req_splitted_master <= 2'b00; 
         end else begin
             req_splitted_master <= next_req_splitted_master;  // Update split request tracking
         end
@@ -78,24 +75,21 @@ always @(*) begin
     active_master = 2'b00;
 
     // Default next states for split tracking
-    next_splitted_master[0] = splitted_master[0];
-    next_splitted_master[1] = splitted_master[1];
+    next_splitted_master = splitted_master;
     
     case (current_state)
         IDLE: begin
-            if (req_master1 && !splitted_master[0][0] && !splitted_master[1][0]) begin
+            if (req_master1 && !splitted_master[0]) begin
                 next_state = GRANT_MASTER1;  // Prioritize Master 1
-            end else if (req_master1 && splitted_master[0][0] && req_splitted_master[0]) begin
+            end else if (req_master1 && splitted_master[0] && req_splitted_master[0]) begin
                 next_state = GRANT_MASTER1;  // Handle split re-grant for Master 1
-                next_splitted_master[0] = next_splitted_master[1];
-                next_splitted_master[1] = 2'b00;
+                next_splitted_master = 2'b00;
                 split_done = 2'b01;
-            end else if (req_master2 && splitted_master[0][1] && req_splitted_master[1]) begin
+            end else if (req_master2 && splitted_master[1] && req_splitted_master[1]) begin
                 next_state = GRANT_MASTER2;  // Handle split re-grant for Master 2
-                next_splitted_master[0] = next_splitted_master[1];
-                next_splitted_master[1] = 2'b00;
+                next_splitted_master = 2'b00;
                 split_done = 2'b10;
-            end else if (req_master2 && !splitted_master[0][1] && !splitted_master[1][1]) begin
+            end else if (req_master2 && !splitted_master[1]) begin
                 next_state = GRANT_MASTER2;  // Move to GRANT_MASTER2 if Master 2 requests
             end else begin
                 next_state = IDLE;           // Stay in IDLE if no requests
@@ -107,21 +101,10 @@ always @(*) begin
             grant_master1 = 1'b1;            // Grant access to Master 1
             
             if (slack1) begin
-                if(splitted_master[0][1] == 1'b1) begin
-                    next_state = GRANT_MASTER2;
-                    next_splitted_master[0] = next_splitted_master[1];
-                    next_splitted_master[1] = 2'b00;
-                    split_done = 2'b10;
-                end else begin
-                    next_state = IDLE;            // Return to IDLE when Master 1 transaction completes
-                end
+                next_state = IDLE;            // Return to IDLE when Master 1 transaction completes
             end else if (split) begin
                 next_state = IDLE;            // Return to IDLE if Master 1 splits
-                if(next_splitted_master[0] == 2'b00) begin
-                    next_splitted_master[0] = 2'b01;    // Mark Master 1 as split
-                end else begin
-                    next_splitted_master[1] = 2'b01;    // Mark Master 1 as split
-                end
+                next_splitted_master[0] = 1'b1;    // Mark Master 1 as split
                 split_done = 2'b00;
             end else begin
                 next_state = GRANT_MASTER1;    // Continue granting Master 1
@@ -133,21 +116,10 @@ always @(*) begin
             grant_master2 = 1'b1;            // Grant access to Master 2
             
             if (slack2) begin
-                if(splitted_master[0][0] == 1'b1) begin
-                    next_state = GRANT_MASTER1;
-                    next_splitted_master[0] = next_splitted_master[1];
-                    next_splitted_master[1] = 2'b00;
-                    split_done = 2'b01;
-                end else begin
-                    next_state = IDLE;            // Return to IDLE when Master 2 transaction completes
-                end         
+                next_state = IDLE;            // Return to IDLE when Master 2 transaction completes            
             end else if (split) begin
                 next_state = IDLE;            // Return to IDLE if Master 2 splits
-                if(next_splitted_master[0] == 2'b00) begin
-                    next_splitted_master[0] = 2'b10;    // Mark Master 2 as split
-                end else begin
-                    next_splitted_master[1] = 2'b10;    // Mark Master 2 as split
-                end
+                next_splitted_master[1] = 1'b1;    // Mark Master 2 as split
                 split_done = 2'b00;
             end else begin
                 next_state = GRANT_MASTER2;    // Continue granting Master 2
@@ -161,9 +133,9 @@ always @(*) begin
 
     // Update next_req_splitted_master based on slave's split request
     if (req_split_slave == 2'b01) begin
-        next_req_splitted_master[0] = 1'b1;  // Slave requesting split for Master 1
+        next_req_splitted_master = 2'b01;  // Slave requesting split for Master 1
     end else if (req_split_slave == 2'b10) begin
-        next_req_splitted_master[1] = 1'b1;  // Slave requesting split for Master 2
+        next_req_splitted_master = 2'b10;  // Slave requesting split for Master 2
     end else begin
         next_req_splitted_master = req_splitted_master;  // Keep current value if no split request
     end
