@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Sep 29 11:42:25 2024
+# Process ID: 11436
+# Current directory: C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/Simple_bus_SMMS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16536 C:\Users\Hansa Niluka\OneDrive - University of Moratuwa\semster 07\4.EN4021 - Advanced Digital Systems\Bus-Desingn\Simple_bus_SMMS\Simple_bus_SMMS.xpr
+# Log file: C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/Simple_bus_SMMS/vivado.log
+# Journal file: C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/Simple_bus_SMMS\vivado.jou
+# Running On: LAPTOP-P4L0CG7N, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14877 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/Simple_bus_SMMS/Simple_bus_SMMS.xpr}
+update_compile_order -fileset sources_1

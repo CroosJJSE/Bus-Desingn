@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/ss_memory.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/ss_slave.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/ss_slave_interface.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/decoder.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/master1.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/master2.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/master_interface.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/memory.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/imports/new/mux_2to1_addr_data.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/imports/new/mux_3to1_8bit.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/imports/new/mux_demux.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/simple_processor1.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/simple_processor2.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/slave.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/slave_interface.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/ss_arbiter.v" \
+"../../../../simple_bus_MMMS_with_SSP.srcs/sources_1/new/tb_simple_bus_MMMS_SSS.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
