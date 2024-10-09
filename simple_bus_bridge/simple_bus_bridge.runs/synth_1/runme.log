@@ -1,0 +1,103 @@
+
+*** Running vivado
+    with args -log tb_slave_bridge_with_fifo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_slave_bridge_with_fifo.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source tb_slave_bridge_with_fifo.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1240.348 ; gain = 0.000
+Command: synth_design -top tb_slave_bridge_with_fifo -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24920
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1240.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tb_slave_bridge_with_fifo' [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/tb_bridge_slave_type.v:22]
+INFO: [Synth 8-6157] synthesizing module 'slave_bridge_with_fifo' [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/bridge_slave_type.v:22]
+INFO: [Synth 8-6157] synthesizing module 'dual_clock_fifo' [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/dual_clock_fifo.v:44]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+WARNING: [Synth 8-7137] Register fifo_mem_reg in module dual_clock_fifo has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'fifo_mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "fifo_mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'dual_clock_fifo' (1#1) [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/dual_clock_fifo.v:44]
+INFO: [Synth 8-6157] synthesizing module 'dual_clock_fifo__parameterized0' [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/dual_clock_fifo.v:44]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+WARNING: [Synth 8-7137] Register fifo_mem_reg in module dual_clock_fifo__parameterized0 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'fifo_mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "fifo_mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'dual_clock_fifo__parameterized0' (1#1) [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/dual_clock_fifo.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/bridge_slave_type.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'slave_bridge_with_fifo' (2#1) [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/bridge_slave_type.v:22]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/tb_bridge_slave_type.v:63]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/tb_bridge_slave_type.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'tb_slave_bridge_with_fifo' (3#1) [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/tb_bridge_slave_type.v:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1240.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1240.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1240.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'slave_bridge_with_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                   FETCH |                              001 |                              001
+               SEND_DATA |                              010 |                              010
+                WAIT_ACK |                              011 |                              011
+              FETCH_DATA |                              100 |                              100
+           SENDBACK_DATA |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'slave_bridge_with_fifo'
+WARNING: [Synth 8-327] inferring latch for variable 'slack_sync_reg' [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/bridge_slave_type.v:221]
+WARNING: [Synth 8-327] inferring latch for variable 'slack_sync_reg' [C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simple_bus_bridge/simple_bus_bridge.srcs/sources_1/new/bridge_slave_type.v:187]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1240.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 9     
++---Registers : 
+	                8 Bit    Registers := 10    
+	                2 Bit    Registers := 17    
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 12    
+	   6 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------

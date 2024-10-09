@@ -85,7 +85,7 @@ module simple_processor2 #(
         instr_mem[3] = {OP_READ, 4'b1000, 4'b0101};   // Read from memory address 8 to regfile[5] (Slave 3)
         instr_mem[2] = {OP_WRITE, 4'b1001, 4'b0100};  // Write regfile[4] to memory address 9 (Slave 3)
 
-        instr_mem[1] = {OP_READ, 4'b0011, 4'b0000};   // Read Memory 01
+        instr_mem[1] = {OP_READ, 4'b0011, 4'b0000};   // Read Memory 03
         instr_mem[0] = {OP_IDLE, 4'b0000, 4'b0000};   // Idle
 
 //          //instr_mem[0] = {OP_READ, 4'b0010, 4'b0000};

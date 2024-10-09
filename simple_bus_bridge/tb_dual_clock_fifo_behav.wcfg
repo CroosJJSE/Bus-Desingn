@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="13.100 ns"></ZoomStartTime>
+      <ZoomEndTime time="264.501 ns"></ZoomEndTime>
+      <Cursor1Time time="55.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="207"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/top_tb/clk1" type="logic">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/clk2" type="logic">
+      <obj_property name="ElementShortName">clk2</obj_property>
+      <obj_property name="ObjectShortName">clk2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/din_master1" type="array">
+      <obj_property name="ElementShortName">din_master1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_master1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/slack_from_slave_bridge" type="logic">
+      <obj_property name="ElementShortName">slack_from_slave_bridge</obj_property>
+      <obj_property name="ObjectShortName">slack_from_slave_bridge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dout_master1" type="array">
+      <obj_property name="ElementShortName">dout_master1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_master1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/addr_master1" type="array">
+      <obj_property name="ElementShortName">addr_master1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_master1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/request_master1" type="logic">
+      <obj_property name="ElementShortName">request_master1</obj_property>
+      <obj_property name="ObjectShortName">request_master1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/wr_master1" type="logic">
+      <obj_property name="ElementShortName">wr_master1</obj_property>
+      <obj_property name="ObjectShortName">wr_master1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/slave_select1" type="logic">
+      <obj_property name="ElementShortName">slave_select1</obj_property>
+      <obj_property name="ObjectShortName">slave_select1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/slave_select2" type="logic">
+      <obj_property name="ElementShortName">slave_select2</obj_property>
+      <obj_property name="ObjectShortName">slave_select2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/grant_master1" type="logic">
+      <obj_property name="ElementShortName">grant_master1</obj_property>
+      <obj_property name="ObjectShortName">grant_master1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/grant_master2" type="logic">
+      <obj_property name="ElementShortName">grant_master2</obj_property>
+      <obj_property name="ObjectShortName">grant_master2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/data_in_slave" type="array">
+      <obj_property name="ElementShortName">data_in_slave[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_slave[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/addr_slave" type="array">
+      <obj_property name="ElementShortName">addr_slave[1:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_slave[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/wr_en_slave" type="logic">
+      <obj_property name="ElementShortName">wr_en_slave</obj_property>
+      <obj_property name="ObjectShortName">wr_en_slave</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/data_out_slave" type="array">
+      <obj_property name="ElementShortName">data_out_slave[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_slave[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/ack_slave" type="logic">
+      <obj_property name="ElementShortName">ack_slave</obj_property>
+      <obj_property name="ObjectShortName">ack_slave</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/request_master2" type="logic">
+      <obj_property name="ElementShortName">request_master2</obj_property>
+      <obj_property name="ObjectShortName">request_master2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/addr_out_slave_bridge_to_master_bridge" type="array">
+      <obj_property name="ElementShortName">addr_out_slave_bridge_to_master_bridge[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_out_slave_bridge_to_master_bridge[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/wd_out_slave_bridge_to_master_bridge" type="array">
+      <obj_property name="ElementShortName">wd_out_slave_bridge_to_master_bridge[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wd_out_slave_bridge_to_master_bridge[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/rd_in_slave_bridge_to_master_bridge" type="array">
+      <obj_property name="ElementShortName">rd_in_slave_bridge_to_master_bridge[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_in_slave_bridge_to_master_bridge[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/w_en" type="logic">
+      <obj_property name="ElementShortName">w_en</obj_property>
+      <obj_property name="ObjectShortName">w_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/r_en" type="logic">
+      <obj_property name="ElementShortName">r_en</obj_property>
+      <obj_property name="ObjectShortName">r_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/ack_bridge" type="logic">
+      <obj_property name="ElementShortName">ack_bridge</obj_property>
+      <obj_property name="ObjectShortName">ack_bridge</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,40 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/bus1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/bus2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/decoder1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/decoder2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/imports/new/dual_clock_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_clock_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/imports/new/master1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/imports/new/master2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/master_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/imports/new/master_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/imports/new/memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/mux_2to1_addr_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2to1_addr_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/mux_3to1_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3to1_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/mux_demux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_demux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/imports/new/simple_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/simple_processor1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_processor1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/simple_processor2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_processor2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/imports/new/slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/slave_bridge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slave_bridge
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/imports/new/slave_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slave_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Hansa Niluka/OneDrive - University of Moratuwa/semster 07/4.EN4021 - Advanced Digital Systems/Bus-Desingn/simply_bridged_2buses/simply_bridged_2buses.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module

@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/bus1.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/bus2.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/decoder1.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/decoder2.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/new/dual_clock_fifo.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/master1.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/master2.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/new/master_bridge.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/master_interface.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/memory.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/mux_2to1_addr_data.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/mux_3to1_8bit.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/mux_demux.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/simple_arbiter.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/simple_processor1.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/simple_processor2.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/slave.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/new/slave_bridge.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/slave_interface.v" \
+"../../../../simpe_bridge_v2.srcs/sources_1/imports/new/top_module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

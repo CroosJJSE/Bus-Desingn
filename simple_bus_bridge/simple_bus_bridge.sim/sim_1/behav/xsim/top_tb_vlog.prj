@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../simple_bus_bridge.srcs/sources_1/new/bridge_master_type.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/new/bridge_slave_type.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/new/dual_clock_fifo.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/imports/new/master1.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/imports/new/master_interface.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/imports/new/memory.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/imports/new/simple_processor1.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/imports/new/slave.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/imports/new/slave_interface.v" \
+"../../../../simple_bus_bridge.srcs/sources_1/new/tb_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
