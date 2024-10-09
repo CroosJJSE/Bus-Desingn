@@ -69,7 +69,7 @@ module slave_bridge (
     always @(posedge clk1 or posedge reset) begin
         if (reset) begin
             current_state <= IDLE;
-
+            slack_sync <= 0;
 
         end else begin
             current_state <= next_state;
@@ -129,6 +129,7 @@ module slave_bridge (
             end
 
             SENDBACK_ACK: begin
+                slack_sync = 0;
                 if (!wr_en) begin // For read operation
                     ack = 1;      // Acknowledge the read data
                     next_state = IDLE;
@@ -141,13 +142,7 @@ module slave_bridge (
     end
     
     //metastability ??
-    always @(posedge slack or posedge reset) begin
-		  if(reset) begin
-				slack_sync = 0;
-		  end
-		  else if(current_state == SENDBACK_ACK) begin
-				slack_sync = 0;
-		  end
+    always @(slack) begin
         if(slack) begin
             slack_sync = 1;
         end

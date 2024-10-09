@@ -20,8 +20,8 @@ module mux_3 #(parameter WIDTH = 8) (
     input wire [WIDTH-1:0] in0,
     input wire [WIDTH-1:0] in1,
     input wire [WIDTH-1:0] in2,
-    input wire [2:0] sel,  // Select one slave's data based on decoder output
-    output reg [WIDTH-1:0] out
+    input wire [1:0] sel,  // Select one slave's data based on decoder output
+    output reg [1:0] out
 );
     always @(*) begin
         case (sel)

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Sep 25 16:55:40 2024
+# Process ID: 115961
+# Current directory: /home/subi/Desktop/ADS/bus/basic/Bus-Desingn/basic.runs/synth_1
+# Command line: vivado -log tb_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_top_level.tcl
+# Log file: /home/subi/Desktop/ADS/bus/basic/Bus-Desingn/basic.runs/synth_1/tb_top_level.vds
+# Journal file: /home/subi/Desktop/ADS/bus/basic/Bus-Desingn/basic.runs/synth_1/vivado.jou
+# Running On        :kobal
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.1 LTS
+# Processor Detail  :AMD Ryzen 7 4700U with Radeon Graphics
+# CPU Frequency     :1630.688 MHz
+# CPU Physical cores:8
+# CPU Logical cores :8
+# Host memory       :16116 MB
+# Swap memory       :4294 MB
+# Total Virtual     :20411 MB
+# Available Virtual :10749 MB
+#-----------------------------------------------------------
+source tb_top_level.tcl -notrace
