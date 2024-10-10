@@ -39,15 +39,7 @@ module slave (
     wire mem_read_enable;         // Read enable for memory module
     wire slack;  // ack from slave
 
-    // Instantiate the ram module
-	
-	s1_ram sl1 (
-	.address(addr),
-	.clock(clk),
-	.data(mem_write_data),
-	.wren(mem_write_enable),
-	.q());
-	 // Instantiate the memory module 
+    // Instantiate the memory module
     memory mem_inst (
         .clk(clk),
         .reset(reset),
